@@ -1,0 +1,13 @@
+function unzip_file($urlooker-master2.zip, $https://github.com/GitGeCyber/Web-Alarm.git) {
+	// create object
+	$zip = new ZipArchive(urlooker-master2.zip) ;
+	// open archive
+	if ($zip->open($urlooker-master2.zip) !== TRUE) {
+		die ('Could not open archive');
+	}
+	// extract contents to destination directory
+	$zip->extractTo($https://github.com/GitGeCyber/Web-Alarm.git);
+	// close archive
+	$zip->close();
+	echo 'Archive extracted to directory';
+}
